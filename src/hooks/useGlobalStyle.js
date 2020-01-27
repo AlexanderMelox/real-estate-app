@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 
 const useGlobalStyle = () => {
   const GlobalStyle = createGlobalStyle`
-    @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
+    @import url('https://fonts.googleapis.com/css?family=Lato:300,400,500,700&display=swap');
 
     :root {
       /* Spacing */
@@ -53,6 +53,7 @@ const useGlobalStyle = () => {
       font-family: var(--font-family-stack);
       background-color: var(--body-background-color);
       font-weight: 400;
+      color: var(--text-color-medium);
     }
 
     /* button resets */
