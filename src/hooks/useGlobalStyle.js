@@ -2,6 +2,8 @@ import { createGlobalStyle } from 'styled-components';
 
 const useGlobalStyle = () => {
   const GlobalStyle = createGlobalStyle`
+    @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap');
+
     :root {
       /* Spacing */
       --space-1: 3rem;
@@ -9,7 +11,7 @@ const useGlobalStyle = () => {
 
       /* Typography */
       --default-font-size: 1.6rem;
-      --font-family-stack: 'Source Sans Pro', 'Roboto', sans-serif;
+      --font-family-stack: 'Lato', 'Roboto', sans-serif;
 
       /* Colors */
       --primary-color: #255ED6;
@@ -50,6 +52,7 @@ const useGlobalStyle = () => {
       font-size: var(--default-font-size);
       font-family: var(--font-family-stack);
       background-color: var(--body-background-color);
+      font-weight: 400;
     }
 
     /* button resets */
